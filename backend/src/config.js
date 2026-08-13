@@ -1,0 +1,10 @@
+require("dotenv").config();
+module.exports={
+ port:Number(process.env.PORT||10000),
+ frontendUrl:process.env.FRONTEND_URL||"*",
+ oddsApiKey:process.env.ODDS_API_KEY||"",
+ oddsApiBase:process.env.ODDS_API_BASE||"https://api.the-odds-api.com/v4",
+ firebaseJson:process.env.FIREBASE_SERVICE_ACCOUNT_JSON||"",
+ openaiKey:process.env.OPENAI_API_KEY||"",
+ openaiModel:process.env.OPENAI_MODEL||"gpt-4.1-mini"
+};
